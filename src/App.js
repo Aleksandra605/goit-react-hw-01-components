@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import statisticalData from './component-2/statistical-data.json';
-import Statistics from './component-2/statistics';
+import statisticalData from './statistic/statistical-data.json';
+import Statistics from './statistic/statistics';
 
 function App() {
-  return <Statistics />;
+  return <Statistics items={statisticalData} />;
 }
 
 export default App;
