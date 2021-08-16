@@ -1,0 +1,13 @@
+#root {
+  margin: 40px;
+}
+
+.stats {
+  list-style-type: none;
+  padding: 0;
+  text-align: 25px;
+}
+
+.avatar {
+  width: 160px;
+}
