@@ -1,8 +1,10 @@
 import './App.css';
-import statisticalData from './statistic/statistical-data.json';
-import Statistics from './statistic/statistics';
+import statisticalData from './component-2/statistical-data.json';
+import Statistics from './component-2/statistics';
 import Profile from './component-1/Profile';
-import user from './component-1/user.json';
+import user from './component-1/user-data.json';
+import friendsData from './component-3/friends-data.json';
+import Friends from './component-3/friends';
 
 function App() {
   return (
@@ -22,4 +24,8 @@ function App2() {
   return <Statistics items={statisticalData} />;
 }
 
-export { App, App2 };
+function App3() {
+  return <Friends props={friendsData} />;
+}
+
+export { App, App2, App3 };

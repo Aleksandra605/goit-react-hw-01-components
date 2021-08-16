@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './statistic/styles.css';
+import './component-2/styles.css';
 import './component-1/profile.css';
-import { App, App2 } from './App';
+import './component-3/friends.css';
+import { App, App2, App3 } from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -18,6 +19,13 @@ ReactDOM.render(
     <App2 />
   </React.StrictMode>,
   document.getElementById('statistics')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App3 />
+  </React.StrictMode>,
+  document.getElementById('friends')
 );
 
 // If you want to start measuring performance in your app, pass a function

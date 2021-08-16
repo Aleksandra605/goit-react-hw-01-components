@@ -1,0 +1,40 @@
+.friends-list {
+  display: block;
+  width: 150px;
+  margin: 50px;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.avatar {
+  width: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.item-friend {
+  width: 250px;
+  border: 1px solid grey;
+}
+
+.item-friend:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.online {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.offline {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+}
