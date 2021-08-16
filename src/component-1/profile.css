@@ -2,10 +2,13 @@
   margin: 40px;
 }
 
+.profile {
+  width: 200px;
+}
+
 .stats {
   list-style-type: none;
   padding: 0;
-  text-align: 25px;
 }
 
 .avatar {

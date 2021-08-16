@@ -3,26 +3,26 @@ import PropTypes from 'prop-types';
 export default function UserProfile(props) {
   const { userImage, name, tag, location, followers, views, likes } = props;
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={userImage} alt="Аватар пользователя" class="avatar" />
-        <p class="name">{name}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
+    <div className="profile">
+      <div className="description">
+        <img src={userImage} alt="Аватар пользователя" className="avatar" />
+        <p className="name">{name}</p>
+        <p className="tag">{tag}</p>
+        <p className="location">{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul className="stats">
         <li>
-          <span class="label">Followers: </span>
-          <span class="quantity">{followers}</span>
+          <span className="label">Followers: </span>
+          <span className="quantity">{followers}</span>
         </li>
         <li>
-          <span class="label">Views: </span>
-          <span class="quantity">{views}</span>
+          <span className="label">Views: </span>
+          <span className="quantity">{views}</span>
         </li>
         <li>
-          <span class="label">Likes: </span>
-          <span class="quantity">{likes}</span>
+          <span className="label">Likes: </span>
+          <span className="quantity">{likes}</span>
         </li>
       </ul>
     </div>
