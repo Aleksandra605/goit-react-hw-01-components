@@ -1,0 +1,17 @@
+#transactions {
+  margin: 50px;
+}
+
+.transaction-history {
+  background-color: rgba(0, 128, 0, 0.295);
+  text-align: 30px;
+}
+
+.column-header {
+  background-color: teal;
+  color: white;
+}
+
+.head {
+  width: 100px;
+}

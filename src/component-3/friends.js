@@ -1,15 +1,15 @@
 import OneFriend from './oneFriend';
 
-export default function Friends({ props }) {
+export default function FriendsList({ friends }) {
   return (
     <ul className="friends-list">
-      {props.map((prop) => (
-        <li className="item-friend" key={prop.id}>
+      {friends.map((friend) => (
+        <li className="item-friend" key={friend.id}>
           <OneFriend
-            avatar={prop.avatar}
-            name={prop.name}
-            isOnline={prop.isOnline}
-            id={prop.id}
+            avatar={friend.avatar}
+            name={friend.name}
+            isOnline={friend.isOnline}
+            id={friend.id}
           />
         </li>
       ))}
