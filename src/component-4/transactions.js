@@ -1,4 +1,4 @@
-export default function Transactions({ transactionsData }) {
+export default function Transactions({ items }) {
   return (
     <table className="transaction-history">
       <thead>
@@ -10,8 +10,8 @@ export default function Transactions({ transactionsData }) {
       </thead>
 
       <tbody>
-        {transactionsData.map((transaction) => {
-          const { id, type, amount, currency } = transaction;
+        {items.map((item) => {
+          const { id, type, amount, currency } = item;
           return (
             <tr key={id}>
               <td>{type}</td>
