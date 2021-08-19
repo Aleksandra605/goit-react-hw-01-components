@@ -1,16 +1,18 @@
+import s from './transactions.module.css';
+
 export default function Transactions({ items }) {
   return (
-    <table className="transaction-history">
+    <table className={s.transactionHistory}>
       <thead>
-        <tr className="column-header">
-          <th className="head">Type</th>
-          <th className="head">Amount</th>
-          <th className="head">Currency</th>
+        <tr className={s.columnHeader}>
+          <th className={s.head}>Type</th>
+          <th className={s.head}>Amount</th>
+          <th className={s.head}>Currency</th>
         </tr>
       </thead>
 
       <tbody>
-        {items.map((item) => {
+        {items.map(item => {
           const { id, type, amount, currency } = item;
           return (
             <tr key={id}>

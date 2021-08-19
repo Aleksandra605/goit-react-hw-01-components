@@ -1,7 +1,8 @@
-ul {
+.list {
   list-style-type: none;
   width: 100%;
   padding: 0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -13,6 +14,7 @@ span {
 .statistics {
   width: 300px;
   margin: 50px;
+  height: min-content;
 }
 
 .title {
@@ -20,12 +22,16 @@ span {
   width: 100%;
   text-align: center;
   margin: 0;
+  height: 35px;
 }
 
 .item {
   border: 1px solid green;
   width: 60px;
   height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .item-div {

@@ -2,8 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'modern-normalize/modern-normalize.css';
-import { App } from './App';
+// import { App1, App2, App3, App4 } from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App1 />
+//     <App2 />
+//     <App3 />
+//     <App4 />
+//   </React.StrictMode>,
+//   document.getElementById('root'),
+// );
 
 ReactDOM.render(
   <React.StrictMode>

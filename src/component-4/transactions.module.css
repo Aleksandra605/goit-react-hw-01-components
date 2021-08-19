@@ -2,12 +2,12 @@
   margin: 50px;
 }
 
-.transaction-history {
+.transactionHistory {
   background-color: rgba(0, 128, 0, 0.295);
   text-align: 30px;
 }
 
-.column-header {
+.columnHeader {
   background-color: teal;
   color: white;
 }

@@ -1,7 +1,10 @@
-.friends-list {
+.friendsList {
   display: block;
-  width: 150px;
-  margin: 50px;
+  width: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style-type: none;
+  padding: 0;
 }
 
 .friend {
@@ -16,16 +19,20 @@
   margin-right: 15px;
 }
 
-.item-friend {
-  width: 250px;
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
   border: 1px solid grey;
+  border-radius: 10px;
 }
 
-.item-friend:not(:last-child) {
+.item:not(:last-child) {
   margin-bottom: 15px;
 }
 
 .online {
+  display: block;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -33,6 +40,7 @@
 }
 
 .offline {
+  display: block;
   width: 15px;
   height: 15px;
   border-radius: 50%;
