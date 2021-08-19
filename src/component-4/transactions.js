@@ -17,8 +17,8 @@ export default function Transactions({ items }) {
           return (
             <tr key={id}>
               <td>{type}</td>
-              <td>{amount}</td>
-              <td>{currency}</td>
+              <td className={s.amount}>{amount}</td>
+              <td className={s.currency}>{currency}</td>
             </tr>
           );
         })}

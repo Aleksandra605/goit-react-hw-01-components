@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types';
 import s from './profile.module.css';
 
-export default function UserProfile({ props }) {
-  const { avatar, name, tag, location, stats } = props;
-
-  console.log('here', location);
+export default function UserProfile({
+  avatar,
+  name,
+  tag,
+  location,
+  followers,
+  views,
+  likes,
+}) {
   return (
     <div className={s.profile}>
       <div className="description">
@@ -17,15 +22,15 @@ export default function UserProfile({ props }) {
       <ul className={s.stats}>
         <li className={s.item}>
           <span className={s.label}>Followers </span>
-          <span className={s.quantity}>{stats.followers}</span>
+          <span className={s.quantity}>{followers}</span>
         </li>
         <li className={s.item}>
           <span className={s.label}>Views </span>
-          <span className={s.quantity}>{stats.views}</span>
+          <span className={s.quantity}>{views}</span>
         </li>
         <li className={s.item}>
           <span className={s.label}>Likes </span>
-          <span className={s.quantity}>{stats.likes}</span>
+          <span className={s.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
@@ -33,11 +38,11 @@ export default function UserProfile({ props }) {
 }
 
 UserProfile.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  followers: PropTypes.number,
-  Views: PropTypes.number,
-  likes: PropTypes.number,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
 };

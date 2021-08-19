@@ -9,6 +9,7 @@
 
 span {
   text-align: center;
+  color: whitesmoke;
 }
 
 .statistics {
@@ -18,7 +19,7 @@ span {
 }
 
 .title {
-  border: 1px solid green;
+  background-color: whitesmoke;
   width: 100%;
   text-align: center;
   margin: 0;
@@ -26,9 +27,9 @@ span {
 }
 
 .item {
-  border: 1px solid green;
   width: 60px;
-  height: 50px;
+  height: 70px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

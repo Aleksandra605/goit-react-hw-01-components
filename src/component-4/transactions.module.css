@@ -2,16 +2,32 @@
   margin: 50px;
 }
 
-.transactionHistory {
-  background-color: rgba(0, 128, 0, 0.295);
-  text-align: 30px;
+table {
+  border-collapse: collapse;
 }
 
 .columnHeader {
-  background-color: teal;
-  color: white;
+  background-color: rgba(5, 57, 70, 0.719) !important;
+  color: whitesmoke;
 }
 
-.head {
+td {
   width: 100px;
+  height: 30px;
+}
+
+th {
+  height: 40px;
+}
+
+tr:nth-child(odd) {
+  background: white;
+}
+
+tr:nth-child(even) {
+  background: #04475033;
+}
+
+tbody {
+  font-size: 12px;
 }
