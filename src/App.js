@@ -1,12 +1,12 @@
 import './App.css';
-import statisticalData from './component-2/statistical-data.json';
-import Statistics from './component-2/statistics';
-import Profile from './component-1/Profile';
-import userData from './component-1/user-data.json';
-import friendsData from './component-3/friends-data.json';
-import FriendsList from './component-3/friends';
-import transactionData from './component-4/transactions-data.json';
-import Transactions from './component-4/transactions';
+import statisticalData from './components/statistics-comp/statistical-data.json';
+import Statistics from './components/statistics-comp/statistics';
+import Profile from './components/profile-comp/Profile';
+import userData from './components/profile-comp/user-data.json';
+import friendsData from './components/friendsList-comp/friends-data.json';
+import FriendsList from './components/friendsList-comp/friendsList';
+import transactionData from './components/transactions-comp/transactions-data.json';
+import Transactions from './components/transactions-comp/transactions';
 
 export default function App() {
   return (
@@ -17,11 +17,8 @@ export default function App() {
         tag={userData.tag}
         location={userData.location}
         stats={userData.stats}
-        // followers={userData.stats.followers}
-        // views={userData.stats.views}
-        // likes={userData.stats.likes}
       />
-      <Statistics statisticalData={statisticalData} />
+      <Statistics title="Upload stats" stats={statisticalData} />
       <FriendsList friends={friendsData} />
       <Transactions items={transactionData} />
     </div>

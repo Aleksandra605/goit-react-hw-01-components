@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './friends.module.css';
+import FriendsListItem from './friendsListItem';
 
 export default function FriendsList({ friends }) {
   return (
@@ -7,10 +8,13 @@ export default function FriendsList({ friends }) {
       {friends.map(friend => {
         const { id, isOnline, avatar, name } = friend;
         return (
-          <li className={s.item} key={id}>
-            <span className={isOnline ? `${s.online}` : `${s.offline}`}></span>
-            <img className={s.avatar} src={avatar} alt={name} width="48" />
-            <p className={s.name}>{name}</p>
+          <li className={s.itemLi} key={id}>
+            <FriendsListItem
+              id={id}
+              isOnline={isOnline}
+              avatar={avatar}
+              name={name}
+            />
           </li>
         );
       })}
