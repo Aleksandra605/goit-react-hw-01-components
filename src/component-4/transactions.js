@@ -1,4 +1,5 @@
 import s from './transactions.module.css';
+import PropTypes from 'prop-types';
 
 export default function Transactions({ items }) {
   return (
@@ -26,3 +27,10 @@ export default function Transactions({ items }) {
     </table>
   );
 }
+
+Transactions.propTypes = {
+  id: PropTypes.string,
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
+};
