@@ -11,15 +11,15 @@ import Transactions from './component-4/transactions';
 export default function App() {
   return (
     <div>
-      {/* <Profile props={userData} /> */}
       <Profile
         avatar={userData.avatar}
         name={userData.name}
         tag={userData.tag}
         location={userData.location}
-        followers={userData.stats.followers}
-        views={userData.stats.views}
-        likes={userData.stats.likes}
+        stats={userData.stats}
+        // followers={userData.stats.followers}
+        // views={userData.stats.views}
+        // likes={userData.stats.likes}
       />
       <Statistics statisticalData={statisticalData} />
       <FriendsList friends={friendsData} />
