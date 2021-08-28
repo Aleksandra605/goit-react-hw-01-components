@@ -6,25 +6,12 @@ export default function FriendsList({ friends }) {
   return (
     <ul className={s.friendsList}>
       {friends.map(friend => {
-        const { id, isOnline, avatar, name } = friend;
-        return (
-          <li className={s.itemLi} key={id}>
-            <FriendsListItem
-              id={id}
-              isOnline={isOnline}
-              avatar={avatar}
-              name={name}
-            />
-          </li>
-        );
+        return <FriendsListItem friendData={friend} key={friend.id} />;
       })}
     </ul>
   );
 }
 
 FriendsList.propTypes = {
-  id: PropTypes.number,
-  isOnline: PropTypes.bool,
-  name: PropTypes.string,
-  avatar: PropTypes.string,
+  key: PropTypes.number,
 };
