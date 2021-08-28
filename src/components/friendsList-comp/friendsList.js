@@ -6,7 +6,15 @@ export default function FriendsList({ friends }) {
   return (
     <ul className={s.friendsList}>
       {friends.map(friend => {
-        return <FriendsListItem friendData={friend} key={friend.id} />;
+        const { isOnline, avatar, name } = friend;
+        return (
+          <FriendsListItem
+            isOnline={isOnline}
+            avatar={avatar}
+            name={name}
+            key={friend.id}
+          />
+        );
       })}
     </ul>
   );

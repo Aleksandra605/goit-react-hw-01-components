@@ -27,7 +27,7 @@
   border-radius: 10px;
 }
 
-.itemLi:not(:last-child) {
+.item:not(:last-child) {
   margin-bottom: 15px;
 }
 
